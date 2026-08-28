@@ -1203,6 +1203,8 @@ class SpotBugsMojo extends AbstractMavenReport implements SpotBugsPluginsTrait {
             forceFileCreation(sarifTempFile)
         }
 
+        outputEncoding = outputEncoding ?: StandardCharsets.UTF_8
+
         log.debug('****** Executing SpotBugsMojo *******')
 
         resourceManager.addSearchPath(FileResourceLoader.ID, session.getCurrentProject().getFile()

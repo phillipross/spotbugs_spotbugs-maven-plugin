@@ -20,7 +20,10 @@
 
     <groupId>com.github.spotbugs</groupId>
     <artifactId>spotbugs-maven-plugin</artifactId>
-    <version>4.10.3.0</version>
+
+    <!-- 5th number in version indicates a forked version -->
+    <version>4.10.3.0.0-SNAPSHOT</version>
+
     <packaging>maven-plugin</packaging>
 
     <name>spotbugs-maven-plugin</name>
